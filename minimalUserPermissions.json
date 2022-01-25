@@ -1,0 +1,46 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Trend Micro Security Assessment",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:CreateFunction",
+                "ec2:DescribeInstances",
+                "aws-marketplace:*",
+                "iam:DeletePolicy",
+                "iam:CreateRole",
+                "iam:AttachRolePolicy",
+                "iam:PutRolePolicy",
+                "iam:PassRole",
+                "iam:DetachRolePolicy",
+                "iam:DeleteRolePolicy",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:DescribeStackResource",
+                "cloudformation:ListStackResources",
+                "cloudformation:UpdateStack",
+                "cloudformation:ListStacks",
+                "cloudformation:DescribeStackResources",
+                "cloudformation:GetTemplateSummary",
+                "cloudformation:DescribeStacks",
+                "cloudformation:CreateStack",
+                "cloudformation:GetTemplate",
+                "cloudformation:DeleteStack",
+                "cloudformation:ValidateTemplate",
+                "lambda:DeleteFunction",
+                "iam:ListRolePolicies",
+                "iam:ListPolicies",
+                "iam:GetRole",
+                "aws-marketplace:ViewSubscriptions",
+                "iam:GetPolicy",
+                "lambda:InvokeFunction",
+                "iam:ListRoles",
+                "iam:DeleteRole",
+                "iam:CreatePolicy",
+                "iam:ListPolicyVersions",
+                "iam:UpdateRole"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
