@@ -2,10 +2,10 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "Trend Micro Security Assessment",
             "Effect": "Allow",
             "Action": [
                 "lambda:CreateFunction",
+                "lambda:GetFunction",
                 "ec2:DescribeInstances",
                 "aws-marketplace:*",
                 "iam:DeletePolicy",
@@ -13,8 +13,12 @@
                 "iam:AttachRolePolicy",
                 "iam:PutRolePolicy",
                 "iam:PassRole",
+                "iam:GetRolePolicy",
                 "iam:DetachRolePolicy",
                 "iam:DeleteRolePolicy",
+                "iam:CreateOpenIDConnectProvider",
+                "iam:GetOpenIDConnectProvider",
+                "iam:TagRole",
                 "cloudformation:DescribeStackEvents",
                 "cloudformation:DescribeStackResource",
                 "cloudformation:ListStackResources",
@@ -38,7 +42,21 @@
                 "iam:DeleteRole",
                 "iam:CreatePolicy",
                 "iam:ListPolicyVersions",
-                "iam:UpdateRole"
+                "iam:UpdateRole",
+                "iam:DeleteOpenIDConnectProvider",
+                "iam:UntagRole",
+                "iam:TagPolicy",
+                "iam:UntagPolicy",
+                "logs:CreateLogGroup",
+                "logs:DescribeLogGroups",
+                "logs:TagLogGroup",
+                "logs:DeleteLogGroup",
+                "logs:ListTagsLogGroup",
+                "logs:PutRetentionPolicy",
+                "logs:DeleteRetentionPolicy",
+                "lambda:TagResource",
+                "lambda:ListTags",
+                "lambda:UntagResource"
             ],
             "Resource": "*"
         }
